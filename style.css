@@ -52,10 +52,28 @@ body {
     font-size: 1.1em;
 }
 
+.about {
+    padding: 1em;
+    margin: 1em auto;
+    background-color: #eee;
+    border-radius: 15px;
+}
+
+.about h1 {
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+
 /* link */
 .links {
-    /* background: #847f7f; */
     padding: 1em;
+    margin: 1em;
+    background: #eee;
+    border-radius: 15px;
+}
+
+.links h1 {
+    text-align: center;
 }
 
 .links .container {
@@ -65,8 +83,6 @@ body {
     grid-gap: 1em;
     margin: 0 auto;
     padding: 1em;
-    background: #ffff;
-    border-radius: 15px;
 }
 
 .links .container .link a {
@@ -91,7 +107,7 @@ body {
 
 .links .container a:hover {
     background: #847f7f;
-    color: #fff;
+    color: #eee;
     transform: translateY(-7px);
 }
 
