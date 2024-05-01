@@ -1,149 +1,168 @@
 /* Style */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #333;
 }
-
 
 /* profile */
 
 .profile .container {
-    margin: 0 auto;
-    padding: 1em;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .image {
-    text-align: center;
+  text-align: center;
 }
 
 .image img {
-    border-radius: 50%;
-    width: 156px;
-    height: 156px;
-    border: 1px solid #4e4e4e97;
-    box-shadow: 0px -1px 79px -20px rgba(0, 0, 0, 0.2) inset;
-    -webkit-box-shadow: 0px -1px 79px -20px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 0px -1px 79px -20px rgba(0, 0, 0, 0.2) inset;
+  border-radius: 50%;
+  width: 156px;
+  height: 156px;
+  border: 1px solid #4e4e4e97;
+  box-shadow: 0px -1px 79px -20px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px -1px 79px -20px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px -1px 79px -20px rgba(0, 0, 0, 0.2) inset;
 }
 
 .name {
-    text-align: center;
-    margin: 1em 0;
+  text-align: center;
+  margin: 1em 0;
 }
 
 .name h2 {
-    font-size: 2.5em;
-    margin: 0;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 .name p {
-    margin: 0;
-    font-size: 1.1em;
+  margin: 0;
+  font-size: 1.1em;
 }
 
 .about {
-    padding: 1em;
-    margin: 1em auto;
-    background-color: #eee;
-    border-radius: 15px;
+  padding: 1em;
+  margin: 1em auto;
+  background-color: #eee;
+  border-radius: 15px;
 }
 
 .about h1 {
-    text-align: center;
-    margin-bottom: 0.4em;
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+
+.about p {
+  padding: 0.5em;
 }
 
 /* link */
 .links {
-    padding: 1em;
-    margin: 1em;
-    background: #eee;
-    border-radius: 15px;
+  padding: 1em;
+  margin: 1em;
+  background: #eee;
+  border-radius: 15px;
 }
 
 .links h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .links .container {
-    /* grid */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
-    margin: 0 auto;
-    padding: 1em;
+  /* grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .links .container .link a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #D9D9D9;
-    border-radius: 10px;
-    width: 100%;
-    height: 76px;
-    padding: 0 1em;
-    text-decoration: none;
-    color: #333;
-    transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 100%;
+  height: 76px;
+  padding: 0 1em;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
 }
 
-.link-1, .link-2, .link-3, .link-4, .link-5, .link-6 {
-    background: #D9D9D9;
-    border-radius: 10px;
+.link-1,
+.link-2,
+.link-3,
+.link-4,
+.link-5,
+.link-6 {
+  background: #d9d9d9;
+  border-radius: 10px;
 }
-
 
 .links .container a:hover {
-    background: #847f7f;
-    color: #eee;
-    transform: translateY(-7px);
+  background: #847f7f;
+  color: #eee;
+  transform: translateY(-7px);
 }
 
 .links .container .link p {
-    font-size: 1.2em;
-    margin: 0;
-    font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
 }
 
+.footer {
+  background-color: #eee;
+  padding: 1em;
+}
 
+.footer p {
+  text-align: center;
+}
+
+.footer p a:hover {
+  color: #847f7f;
+  transition: all ease-in 0.2s;
+}
 
 /* Mobile view */
 @media (max-width: 600px) {
-    .links .container {
-        grid-template-columns: 1fr;
-    }
+  .links .container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 430px) {
-    .image img {
-        width: 120px;
-        height: 120px;
-    }
-    .name h2 {
-        font-size: 1.8em;
-    }
-    .name p {
-        font-size: 0.8em;
-    }
-    .links .container {
-        gap: 0.5em;
-    }
-    .links .container a:hover {
-        transform: translateY(-5px);
-    }
-    .links .container .link a {
-        height: 60px;
-    }
+  .image img {
+    width: 120px;
+    height: 120px;
+  }
+  .name h2 {
+    font-size: 1.8em;
+  }
+  .name p {
+    font-size: 0.8em;
+  }
+  .links .container {
+    gap: 0.5em;
+  }
+  .links .container a:hover {
+    transform: translateY(-5px);
+  }
+  .links .container .link a {
+    height: 60px;
+  }
 }
